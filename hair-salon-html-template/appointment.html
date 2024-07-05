@@ -54,13 +54,14 @@
                 <a href="index.html" class="nav-item nav-link">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
                 <a href="service.html" class="nav-item nav-link">Service</a>
-                <!--<div class="nav-item dropdown">
+               <!--<div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu m-0">
                         <a href="price.html" class="dropdown-item">Pricing Plan</a>
                         <a href="team.html" class="dropdown-item">Our Barber</a>
                         <a href="open.html" class="dropdown-item">Working Hours</a>
                         <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="404.html" class="dropdown-item">404 Page</a>
                     </div>
                 </div>-->
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
@@ -69,7 +70,52 @@
         </div>
     </nav>
     <!-- Navbar End -->
-       
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <h1 class="display-3 text-white text-uppercase mb-3 animated slideInDown">Appointment</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center text-uppercase mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">Appointment</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+
+  <!--appointment-form.html-->
+  
+  <form id="appointment-form">
+    <h2>Hair Salon Appointment Form</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required><br><br>
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required><br><br>
+    <label for="time">Time:</label>
+    <input type="time" id="time" name="time" required><br><br>
+    <label for="service">Service:</label>
+    <select id="service" name="service" required>
+      <option value="">Select a service</option>
+      <option value="haircut">Haircut</option>
+      <option value="color">Hair Color</option>
+      <option value="style">Hair Styling</option>
+      <option value="other">Other (please specify)</option>
+    </select><br><br>
+    <label for="notes">Additional Notes:</label>
+    <textarea id="notes" name="notes"></textarea><br><br>
+    <button type="submit">Book Appointment</button>
+  </form>
+
+
     <!-- Footer Start -->
     <div class="container-fluid bg-secondary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
